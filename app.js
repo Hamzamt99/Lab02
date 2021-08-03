@@ -1,4 +1,5 @@
 let user = prompt("PleaseEnter your Name:");
+let counter = 0;
 
 alert("Welcome to my site"+"  "+ user);
 alert("Please answer yes or no for Questions below:")
@@ -6,6 +7,7 @@ let Q1 = prompt("Do i like soccer?");
 switch (Q1){
     case "yes":
         alert("TRUE");
+        counter++;
         break;
         case "no":
         alert("False");
@@ -22,6 +24,7 @@ switch (Q2){
         break;
         case "no":
         alert("True");
+        counter++;
         break;
         default:
             alert("Wrong answer please answer yes or no")
@@ -34,6 +37,7 @@ let Q3 = prompt("Do you think this is my last semster?")
 switch (Q3){
     case "yes":
         alert("True");
+        counter++;
         break;
         case "no":
         alert("False");
@@ -47,6 +51,7 @@ let Q4 = prompt("Do you think im better than Messi?")
 switch (Q4){
     case "yes":
         alert("True");
+        counter++;
         break;
         case "no":
         alert("False");
@@ -74,4 +79,51 @@ switch (Q5){
             break;
 
 }
-alert("Thanks for visit my webiste"+user);
+
+
+let A = prompt("you need to guess the number please answer yes/no:");
+let i = 0;
+for(i ;i<= 3;i++ ){
+   
+let Q6 = prompt("Enter a number:");
+
+     if(Q6 == 5){
+    alert("True");
+    counter++;
+    break;
+    } else if (Q6 < 5){
+        alert("Too low"); 
+    } else {
+        alert("Too high");
+    } 
+    if(i == 3){
+        alert("Your attempts are over the number is 5");
+
+    }
+          
+        }
+
+        let Team = ["Barcalona","Real madrid","Mancity","PSG","Manunited","Bayren"];
+      for (let i = 0; i <6; i++) {
+        let Q7 = prompt('Quess my fav team');
+        if (Q7 === Team[2]) {
+        alert('True');
+        counter++;
+        console.log(i + 1);
+        break;
+    } 
+    else {
+        alert("Wrong");
+    }
+    if(i == 5){
+        alert("Your attempts are over the Team is Mancity");
+    }
+}
+  alert("Thanks for visit my website:"+"  "+ user);
+ 
+      
+    alert("your score is" +"  "+counter);
+
+     
+        
+        
